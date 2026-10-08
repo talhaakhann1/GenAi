@@ -1,0 +1,73 @@
+# =========================================================================
+# PYTHON & VIRTUAL ENVIRONMENTS
+# =========================================================================
+# Virtual environments created via uv or standard venv
+.venv/
+venv/
+ENV/
+env/
+
+# Python caching mechanisms
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging profiles
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =========================================================================
+# ENVIRONMENT VARIABLES & SECRETS (CRITICAL FOR RAG)
+# =========================================================================
+# Never commit your API keys (GROQ_API_KEY, OPENAI_API_KEY, etc.)
+.env
+.env.local
+.env.*
+*.env
+
+# =========================================================================
+# VECTOR DATABASES & LOCAL DATA DUMPS
+# =========================================================================
+# Local databases, ChromaDB collections, FAISS indexes, or raw text files
+.chroma/
+faiss_index/
+qdrant_data/
+*.db
+*.sqlite3
+
+# Ignore dummy data files if they contain sensitive or high-volume test assets
+# (Uncomment the line below if you want to keep notes.txt purely local)
+# notes.txt
+
+# =========================================================================
+# IDE & OPERATING SYSTEM CONFIGURATIONS
+# =========================================================================
+# Visual Studio Code workspaces
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ settings
+.idea/
+
+.env/
+
+# Windows OS specific caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
